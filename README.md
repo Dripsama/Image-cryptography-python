@@ -24,3 +24,12 @@ deactivate
 ```
 pip install -r requirements.txt
 ```
+## To run app
+creating ciphered.png (encryption)
+```
+python app.py -vvv --message message.png --secret secret.png
+```
+decryption
+```
+python show.py ciphered.png secret.png
+```
