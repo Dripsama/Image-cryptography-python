@@ -11,5 +11,8 @@ def generate_ciphered_image(secret_image, prepared_image):
                 color = 0
             else:
                 color = 1
-
+            ciphered_image.putpixel((x,  y),   1-color)
+            ciphered_image.putpixel((x+1,y),   color)
+            ciphered_image.putpixel((x,  y+1), color)
+            ciphered_image.putpixel((x+1,y+1), 1-color)
     return ciphered_image
